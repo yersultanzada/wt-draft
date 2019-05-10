@@ -337,6 +337,7 @@ img::-moz-selection {
 #mainNav .burger_menu {
   float: right;
   padding-top: 10px;
+  color: #676767;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -429,11 +430,17 @@ img::-moz-selection {
 
 .menu-modal#menuModal .close-modal {
   position: absolute;
-  top: 25px;
-  right: 25px;
+  top: 15px;
+  right: 15px;
   z-index: 1000;
   cursor: pointer;
   background-color: transparent;
+}
+
+.menu-modal#menuModal .close-modal a {
+  display: block;
+  padding: 10px 15px;
+  color: #676767;
 }
 
 section#masthead {

@@ -21,6 +21,17 @@
     $('#menuModal').modal('hide');
   });
 
+  $('#menuModal').on('hidden.bs.modal', function (e) {
+      $('body,html').css({
+          'overflow-y' : 'auto'
+      })
+  });
+  $('#menuModal').on('shown.bs.modal', function (e) {
+      $('body,html').css({
+          'overflow-y' : 'hidden'
+      })
+  });
+
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#mainNav',
