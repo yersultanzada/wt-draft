@@ -22,6 +22,41 @@ a:hover {
   color: #383f45;
 }
 
+section#caption {
+  padding: 0;
+  background-color: #343D68;
+}
+
+section#caption p {
+  margin-top: 11px;
+  margin-bottom: 0;
+}
+
+section#caption a.btn-primary {
+  background-color: #e9e765;
+  border-color: #e9e765;
+  border-radius: 0;
+  color: #343D68 !important;
+  font-weight: 600;
+}
+
+section#caption a.btn-primary:active, section#caption a.btn-primary:focus, section#caption a.btn-primary:hover {
+  background-color: #e9e765 !important;
+  border-color: #e9e765 !important;
+  color: #343D68 !important;
+}
+
+section#caption a.btn-primary:active, section#caption a.btn-primary:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+  box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+}
+
+section#caption a.btn-primary i {
+  font-size: 17px;
+  vertical-align: text-top;
+  margin-right: 5px;
+}
+
 .wt-text-primary {
   color: #676767 !important;
 }
@@ -335,21 +370,28 @@ img::-moz-selection {
   }
 }
 
+.menu-modal#menuModal {
+  height: 100%;
+  overflow-y: hidden !important;
+}
+
 .menu-modal#menuModal .modal-dialog {
   margin: 0;
   max-width: 100vw;
+  height: 100%;
 }
 
 .menu-modal#menuModal .modal-content {
   background-color: #ebebeb;
   text-align: center;
-  min-height: 100vh;
+  height: 100%;
   border: none;
   border-radius: 0;
 }
 
 .menu-modal#menuModal .modal-content .modal-body {
   padding: 20px 25px;
+  overflow-y: auto;
 }
 
 .menu-modal#menuModal .modal-content .modal-body a.menu_logo {
@@ -358,9 +400,28 @@ img::-moz-selection {
   color: #676767;
 }
 
+.menu-modal#menuModal .modal-content .modal-body a.nav-link {
+  display: inline-block;
+}
+
+.menu-modal#menuModal .modal-content .modal-body a.menu_tel {
+  display: inline-block;
+  background-color: #676767;
+  padding: 5px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.menu-modal#menuModal .modal-content .modal-body .modal_helper {
+  height: 67px;
+}
+
 .menu-modal#menuModal .modal-content .modal-body .request_btn {
-  position: absolute;
-  bottom: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0 20px 0;
+  background-color: #ebebeb;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);

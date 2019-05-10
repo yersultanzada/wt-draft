@@ -15,6 +15,37 @@ a {
     color: lighten($gray-900, 10%);
   }
 }
+section#caption {
+  padding: 0;
+  background-color: #343D68;
+  p {
+    margin-top: 11px;
+    margin-bottom: 0;
+  }
+  a.btn-primary {
+    background-color: #e9e765;
+    border-color: #e9e765;
+    border-radius: 0;
+    color: #343D68 !important;
+    font-weight: 600;
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: #e9e765 !important;
+      border-color: #e9e765 !important;
+      color: #343D68 !important;
+    }
+    &:active,
+    &:focus {
+      box-shadow: 0 0 0 0.2rem rgba(254, 209, 55,.5) !important;
+    }
+    i {
+      font-size: 17px;
+      vertical-align: text-top;
+      margin-right: 5px;
+    }
+  }
+}
 
 .wt-text-primary {
   color: $primary-200 !important;
