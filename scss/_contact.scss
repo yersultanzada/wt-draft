@@ -1,16 +1,7 @@
 // Styling for the contact section
-#contact2 {
-  .wt-block-contactsBg {
-    background-color: $primary-200;
-  }
-  .wt-block-contactsCenter {
-    background-color: #fff;
+#contact {
+  .block_formRight {
+    background-color: $primary;
     padding: 50px;
-    max-width: 450px;
-    margin: 70px auto;
-  }
-  img {
-    min-height: 552px;
-    object-fit: cover;
   }
 }

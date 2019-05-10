@@ -1,23 +1,13 @@
-// Styling for the about1 section
-section#about1 {
-  .wt-graft-img {
-    width: 100%;
-    height: 300px;
-    background-color: #cccccc;
-    img {
-      margin-top: 80px;
-    }
-  }
-}
-// Styling for the about2 section
-section#about2 {
+// Styling for the about section
+section#about {
   .wt-graft-img {
     width: 100%;
     height: 280px;
-    background-color: #cccccc;
+    background-color: $primary;
     text-align: center;
     img {
-      margin-top: 80px;
+      margin-top: 100px;
+      width: 80px;
     }
   }
 }
