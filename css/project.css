@@ -10,6 +10,13 @@ body {
   font-family: 'Merriweather', serif;
 }
 
+body.no_scroll {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+}
+
 p {
   line-height: 1.75;
 }

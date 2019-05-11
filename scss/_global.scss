@@ -4,6 +4,12 @@ body {
   color: $primary-200;
   @include merriweather-font;
 }
+body.no_scroll {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+}
 
 p {
   line-height: 1.75;
