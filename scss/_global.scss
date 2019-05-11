@@ -4,7 +4,7 @@ body {
   color: $primary-200;
   @include merriweather-font;
 }
-body.no_scroll {
+body.js-no-scroll {
   height: 100%;
   width: 100%;
   position: fixed;
@@ -28,7 +28,7 @@ section#caption {
     margin-top: 11px;
     margin-bottom: 0;
   }
-  a.btn-primary {
+  a.wt-btn-primary {
     background-color: #e9e765;
     border-color: #e9e765;
     border-radius: 0;
@@ -148,7 +148,7 @@ section {
   p.wt-section-subheading {
     font-size: 22px;
     line-height: 1.36;
-    font-weight: 700;
+    font-weight: 400;
     width: 100%;
     -webkit-text-decoration: none;
     text-decoration: none;
@@ -197,12 +197,12 @@ form.wt-form-rounded {
 .wt-btn-size-md {
   padding: 12px 24px;
 }
-.btn-xl {
-  font-size: 18px;
-  padding: 20px 40px;
+.wt-btn-size-xl {
+  font-size: 15px;
+  padding: 15px 30px;
 }
 
-.btn-primary {
+.wt-btn-primary {
   background-color: $primary-200;
   border-color: $primary-200;
   color: white !important;
@@ -218,7 +218,7 @@ form.wt-form-rounded {
     box-shadow: 0 0 0 0.2rem rgba(254, 209, 55,.5) !important;
   }
 }
-.btn-white {
+.wt-btn-white {
   background-color: white;
   border-color: white;
   color: $primary-200 !important;
@@ -237,12 +237,22 @@ form.wt-form-rounded {
 .wt-btn-rounded {
   border-radius: 25px;
 }
-.wt-btn-rounded-transparent {
+.wt-btn-transparent {
   background-color: transparent;
   border-color: $primary-200;
   color: $primary-200 !important;
-  border-radius: 25px;
-  border-width: 2px;
+  border-width: 1px;
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: transparent !important;
+    border-color: $primary-200 !important;
+    color: $primary-200 !important;
+  }
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(254, 209, 55,.5) !important;
+  }
 }
 
 // Highlight color customization

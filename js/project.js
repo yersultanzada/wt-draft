@@ -22,10 +22,10 @@
   });
 
   $('#menuModal').on('hidden.bs.modal', function (e) {
-      $('body').removeClass('no_scroll')
+      $('body').removeClass('js-no-scroll')
   });
   $('#menuModal').on('shown.bs.modal', function (e) {
-      $('body').addClass('no_scroll')
+      $('body').addClass('js-no-scroll')
   });
 
   // Activate scrollspy to add active class to navbar items on scroll
